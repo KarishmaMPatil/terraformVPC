@@ -1,5 +1,5 @@
 module "ec2" {
-  source = "/home/karipatil/TERRAFORMVPCPROJECT/terraformb32/module/main/ec2"
+  source = "/home/karipatil/TERRAFORMVPC/module/main/ec2"
   webserver_ami = "ami-019715e0d74f695be"   
    webserver_instance_type = "t3.micro"   
   webserver_keyname = "ubuntu"
@@ -11,7 +11,7 @@ module "ec2" {
 } 
 
 module "vpc" {
-  source =  "/home/karipatil/TERRAFORMVPCPROJECT/terraformb32/module/main/vpc"
+  source =  "/home/karipatil/TERRAFORMVPC/module/main/vpc"
   vpc_cidr = "172.30.0.0/16"   #vpc variable block unique name
   vpc_subnetA = "172.30.128.0/20"
   public_ip = true
