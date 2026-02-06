@@ -11,7 +11,7 @@ module "ec2" {
 } 
 
 module "vpc" {
-  source =  "/home/karipatil/TERRAFORMVPC/module/main/vpc"
+  source =  ""/home/karipatil/TERRAFORMVPC/module/main/vpc"
   vpc_cidr = "172.30.0.0/16"   #vpc variable block unique name
   vpc_subnetA = "172.30.128.0/20"
   public_ip = true
